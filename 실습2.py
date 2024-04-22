@@ -1,8 +1,10 @@
-bunza = int(input("분자 값을 입력하시오: "))
-bunmo = int(input("분모 값을 입력하시오: "))
+# 각 과목 점수는 다음과 같다. 각 과목 모두 80점 이상인지 판별하여 논리 연산자를 사용하여 출력하시오.
 
-part = bunza // bunmo
-last = bunza  % bunmo
+# {kor=90, eng=80, math=100}
 
-print("나눗셈 몫 = {:d}".format(part))
-print("나눗셈 나머자 = {:d}".format(last))
+kor = 90
+eng = 80
+math = 100
+
+result = (kor >= 80 and eng >= 80 and math >= 80)
+print("결과값:",result)
