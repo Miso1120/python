@@ -1,8 +1,7 @@
-# 홀짝 판별 프로그램
+# while 반복문을 이용하여 “Python Program’을 5번 출력하고 그 옆에 출력 횟수도 함께 출력되도록 프로그램을 작성하시오.
 
-num = int(input("어떤 수? "))
+i=1
 
-if num %2 == 0:
- print("입력한 수 {}는 짝수이다.".format(num))
-else:
- print("입력한 수 {}는 홀수이다.".format(num)) 
+while i <= 5:
+ print("Python Program {}번 출력".format(i))
+ i+=1

@@ -1,14 +1,10 @@
-# 정수를 입력받아 숫자에 따라 한 자릿수, 두 자릿수, 세자릿수, 네자릿수를 출력하는 프로그램을 작성
+# animal=["dog","duck","pony","donkey","giraffe","elephant","cat"]가 기억되어 있다.
+# 문자열이 5글자 이내인 동물만 출력하는 프로그램을 작성하시오.
 
-x  = int(input("어떤 수?"))
 
-if x <10:
- print("한 자릿수 숫자입니다.")
-elif x <100:
- print("두 자릿수 숫자입니다.")
-elif x <1000:
- print("세 자릿수 숫자입니다.")
-elif x <10000:
- print("네 자릿수 숫자입니다.")
-else:
- print("자연수가 아니므로 자연수로 입력해주세요.")  
+animal=["dog","duck","pony","donkey","giraffe","elephant","cat"]
+x=len(animal)
+
+for i in animal:
+ if len(i) < 5:
+  print(i)
