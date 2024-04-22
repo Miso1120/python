@@ -1,7 +1,8 @@
-# 사용자로부터 어떤 숫자 하나를 입력 받아, 입력한 숫자가 3의 배수인지를 판별하는 프로그램을 삼항 연산자를 이용하여 작성하시오.
+# 홀짝 판별 프로그램
 
-in_num = int(input("숫자를 입력하시오: "))
+num = int(input("어떤 수? "))
 
-ask =("당신이 입력한 숫자{}는(은) 3의 배수입니다.".format(in_num)) if in_num %3 == 0 else ("당신이 입력한 숫자{}는(은) 3의 배수가 아닙니다.".format(in_num))
-
-print(ask)
+if num %2 == 0:
+ print("입력한 수 {}는 짝수이다.".format(num))
+else:
+ print("입력한 수 {}는 홀수이다.".format(num)) 
