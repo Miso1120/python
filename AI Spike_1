@@ -1,0 +1,18 @@
+# 동기 처리를 위한 루프 실행 기능
+# - 동기란, 어떤 작업을 실행할 때 그 작업이 끝나기를 기다리는 방식
+# - 함수 정의시. 앞에 async키워드를 ㅏㅅ용하여 대기 가능한 비동기 함수 저으이
+# - runloop 모듈의 run()함수를 이용해 비동기 함수 실행
+# - 비동기 함수 안에 await 키워드를 사용하면, 명령이 완료될 때까지 대기
+
+
+from hub import light_matrix
+import runloop
+import motor
+from hub import port
+
+async def main():
+    # write your code here
+    await light_matrix.write("Hi!")
+
+runloop.run(main())
+
